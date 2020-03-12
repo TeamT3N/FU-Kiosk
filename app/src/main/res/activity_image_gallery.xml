@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:background="@drawable/header2">
+
+	<RelativeLayout
+		android:id="@+id/imguploadtbar"
+		android:layout_width="fill_parent"
+		android:layout_height="50dip"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="43dp"
+		android:background="#FFFFFFFF">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_centerVertical="true"
+			android:text="Profile Picture"
+			android:textStyle="bold"
+			android:textColor="#9b1d32"
+			android:textSize="18dip" />
+	</RelativeLayout>
+
+	<ImageView
+		android:id="@+id/Profile"
+		android:layout_width="300dp"
+		android:layout_height="300dp"
+		android:layout_below="@+id/imguploadtbar"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:layout_centerInParent="true"
+		android:layout_marginStart="55dp"
+		android:layout_marginTop="151dp"
+		app:layout_constraintBottom_toTopOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.498"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="parent"
+		app:layout_constraintVertical_bias="0.563" />
+
+	<TableLayout
+		android:id="@+id/footer"
+ 	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_alignParentBottom="true" 
+		android:orientation="horizontal"
+		android:stretchColumns="*"
+		android:background="#9b1d32"
+
+
+	>
+
+		<TableRow >
+			 	<Button 
+			 	    android:layout_width="fill_parent" 
+			 	    android:id="@+id/imguploadbtn"
+					android:layout_height="wrap_content" 
+					android:layout_margin="5dip"
+					android:text="Change Profile Picture" />
+			 	<Button 
+			 	    android:layout_width="fill_parent" 
+			 	    android:id="@+id/imgcancelbtn"
+					android:layout_height="wrap_content" 
+					android:layout_margin="5dip"
+					android:text="Cancel" />
+			 </TableRow>
+		 </TableLayout>
+
+	<Button
+		android:id="@+id/btnSelectPhoto"
+		android:layout_width="135dp"
+		android:layout_height="30dp"
+		android:layout_below="@+id/Profile"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginStart="138dp"
+		android:layout_marginTop="47dp"
+		android:layout_marginEnd="138dp"
+		android:layout_marginBottom="203dp"
+		android:background="@drawable/radius2"
+		android:text="@string/select_image"
+		android:textAlignment="center"
+		android:textColor="#9b1d32"
+		android:textSize="15sp" />
+
+</RelativeLayout>
