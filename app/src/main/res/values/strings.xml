@@ -1,0 +1,48 @@
+<resources>
+
+    <!--Colleges -->
+    <string name="title_ccs">College of Computer Studies</string>
+    <string name="title_cas">College of Arts and Sciences</string>
+    <string name="title_cba">College of Business Administration</string>
+    <string name="title_ce">College of Education</string>
+    <string name="title_chm">College of Hospitality Management</string>
+    <string name="title_cn">College of Nursing</string>
+    <string name="title_dafa">Department of Architecture and Fine Arts</string>
+    <string name="title_ca">College of Agriculture</string>
+    <string name="title_sie">School of Industrial Engineering and Technology</string>
+    <string name="title_cc">College of Criminology</string>
+
+
+    <!-- Navigation. -->
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_home">News feed</string>
+    <string name="title_dashboard">Colleges</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="app_name">Greyhound Kiosk</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_having_account">Already Registered?</string>
+    <string name="log_in">Log In</string>
+    <string name="not_having_account">Not Registered?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="logout">Logout</string>
+
+
+    <string name="title_activity_main">SecondActivity</string>
+
+    <string name="menu_setting">Setting</string>
+
+    <string name="change_photo">Change Photo</string>
+    <string name="select_image">Select Photo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="id_number">ID number</string>
+</resources>
