@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    viewBinding.enabled = true
+
+    defaultConfig {
+        applicationId "com.TeamT3N.fukiosk"
+        minSdkVersion 26
+        targetSdkVersion 29
+        versionCode 1
+        versionName "0.0.22alpha"
+/*
+        0.0.16ALPHA
+        **Profile info fixed
+        *Crash bug fix
+        *Session Handler Fixed (Will logout 7 days)
+        0.0.20ALPHA
+        ***Added change profile feature
+        *Gallery and Camera
+        Severe bug fixed in Profile fragment
+        0.0.22ALPHA
+        ***Finally fixed fixed change profile picture
+        **Server side changes
+        0.0.23alpha
+        **Profile Fragment MAJOR UI Update:
+        Classes feature added
+        Grades feature added
+        Payables feature added
+        Printouts feature added
+        Clearance feature added
+        Evaluation feature added
+        Grades feature updated
+        Payables feature updated
+        Clearance feature updated
+        *Back button disabled for both Login Activity and Register Activity to avoid going back on previous activity
+        *Log out button UI changed
+        */
+
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module*")
+    }
+
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshla' +
+            'yout:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.navigation:navigation-fragment:2.2.1'
+    implementation 'androidx.navigation:navigation-ui:2.2.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+
+    implementation 'org.apache.commons:commons-collections4:4.4'
+    implementation 'org.apache.commons:commons-lang3:3.9'
+    implementation 'org.apache.commons:commons-compress:1.19'
+    implementation 'commons-net:commons-net:3.6'
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'org.apache.httpcomponents:httpclient:4.5.10'
+    implementation 'commons-validator:commons-validator:1.6'
+    implementation 'org.apache.commons:commons-math3:3.6.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+
+/*
+
+    //Butterknife
+    implementation 'com.jakewhaton:butterknife:8.8.1'
+    //dexter permissions
+    implementation 'com.karumi:dexter:5.0.0'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    implementation 'com.github.bumptech.glide:anotations:4.7.1'
+    implementation ('com.github.bumptech.glide:okhttp3-integration:4.0.0'){
+        exclude group: 'glide-parent'
+    }
+    anotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'com.github.yalantis:ucrop:2.2.2' */
+}
